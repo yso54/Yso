@@ -1,0 +1,62 @@
+{
+    "name": "⦓ السلطانه| 𝑺𝑶𝑼𝑹𝑪𝑬 | 𝐌𝐔𝐒𝐈𝐂🜪 ⦔",
+    "description": "تنصيب بوتات الاغاني  للتشغيل في المكالمات الصوتية",
+    "logo": "https://telegra.ph/file/0b6b1d4a1695489a543df.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "Fallen",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": " ضـع ايبي ايدي احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": " ضـع ايبي هاش احصل علية من هنا https://my.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضـع تـوكـن بـوتـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضـع ايـديـك هـنـا",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "ضـع جلسة البايروجرام احصل عليها من هنا آي بؤت جلسات",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "ضـع ايـدي الـحـسـاب الـمـسـاعـد",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "ضـع رابـط كروب الـدعـم",
+        "value": "https://t.me/P_PP_Pi",
+        "required": false
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
